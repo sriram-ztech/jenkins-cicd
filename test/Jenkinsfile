@@ -1,5 +1,6 @@
 node {
     stage('Test'){
+       checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/sriram-ztech/jenkins-cicd.git']]])
        sh 'hostname'
        sh 'pwd'
        sh 'ls -lrt'
