@@ -1,0 +1,8 @@
+node {
+    stage('Test'){
+       sh 'hostname'
+       sh 'pwd'
+       echo "Ok"
+    }
+}
+
